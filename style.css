@@ -1,0 +1,99 @@
+body {
+    background-color: #6b5b95;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    color: yellow;
+}
+.letblock{
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+    text-align: center;
+    color: white;
+    background-color: blue;
+}
+.vow{
+    background-color: black;
+}
+.ltr{
+    float: left;
+}
+.rtl{
+    float: right;
+}
+.scrblock{
+    float: left;
+    width: 100%;
+}
+.info{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+}
+.c{
+    background-color: #ff7b25;
+}
+.v{
+    background-color: #feb236;
+}
+.o{
+    background-color: #d64161;
+}
+span{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+span[title]:hover:after{
+    content: attr(title);
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    color: red;
+    font-size: 12px;
+}
+.titl{
+    font-size: 48px;
+    color: white;
+}
+.outside{
+    color:black;
+    font-size: 20px;
+}
+.vowels{
+    background-color: black;
+}
+.ipalink:link {
+    color: blue;
+}
+.ipalink:visited{
+    color: blueviolet;
+}
+.ipalink:hover{
+    color: purple;
+}
+.titl:hover{
+    color: black;
+}
+.letters.c:hover{
+    background-color: white;
+    color: #ff7b25;
+}
+.letters.v:hover{
+    background-color: white;
+    color: #feb236;
+}
+.letters.o:hover{
+    background-color: white;
+    color: #d64161;
+}
+.vowels:hover{
+    background-color: white;
+    color: black;
+}
