@@ -1,15 +1,17 @@
-$(document).on("mouseenter", ".letblock", function() {
+$(document).on("click mouseenter", ".letblock", function() {
     var num = $(this).attr('id');
     var div = $(this).parent().closest('div').attr('id');
+    if(div==undefined){
+        return;
+    }
     var type = $(this).attr('class').split(" ")[1];
     var text = language[div][type][num][0];
     var phonetic = language[div][type][num][1];
     var cases = language[div]["cases"];
-    text = text + "";
     if(div!=="ar"){
         text = text.split("");
     }
-    if(div=="ar"){
+    else{
         text = text.split(" ");
     }
     $("#" + div + " .info").empty();
@@ -26,7 +28,7 @@ $(document).on("mouseenter", ".letblock", function() {
         }
     }
     $("#" + div + " .info").append("<p>Pronunciation: " + pronounce(phonetic) + "</p>");
-    $("#" + div + " .info").append("<p><a target='_blank' class='ipalink' href='https://en.wikipedia.org/wiki/International_Phonetic_Alphabet'>IPA</a>: " + ipa[phonetic]["ipa"] + "</p>");
+    $("#" + div + " .info").append("<p><a target='_blank' class='ipalink' href='https://en.wikipedia.org/wiki/International_Phonetic_Alphabet'>IPA</a>: " + ipaize(phonetic) + "</p>");
     function pronounce(x){
         if(!x.includes(" ")){
             return ipa[x]["pronunciation"];
@@ -36,5 +38,13 @@ $(document).on("mouseenter", ".letblock", function() {
             return ipa[x[0]]["pronunciation"] + " " + ipa[x[1]]["pronunciation"];
         }
     }
-    
+    function ipaize(x){
+        if(!x.includes(" ")){
+            return ipa[x]["ipa"];
+        }
+        else{
+            x = x.split(" ");
+            return ipa[x[0]]["ipa"] + ipa[x[1]]["ipa"];
+        }
+    }
 });
