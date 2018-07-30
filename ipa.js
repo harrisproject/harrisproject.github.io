@@ -264,14 +264,64 @@ var ipa = {
         type: "c",
         ipa: "ŋ"
     },
-    silent: {
+    gn:{
+        pronunciation: "<b>gn</b> as in <b>gn</b>occhi",
+        type: "c",
+        ipa: "ɲ"
+    },
+    tt:{
+        pronunciation: "far back <b>t</b> as in ar<b>t</b>ist",
+        type: "c",
+        ipa: "ʈ"
+    },
+    dd:{
+        pronunciation: "far back <b>dd</b> as in o<b>dd</b>",
+        type: "c",
+        ipa: "ɖ"
+    },
+    nn:{
+        pronunciation: "far back <b>n</b> as in ur<b>n</b>",
+        type: "c",
+        ipa: "ɳ"
+    },
+    ssh:{
+        pronunciation: "far back <b>ss</b> as in a<b>ss</b>ure",
+        type: "c",
+        ipa: "ʂ" 
+    },
+    t_:{
+        pronunciation: "like <b>t</b> as in <b>t</b> on the teeth",
+        type: "c",
+        ipa: "t̪"
+    },
+    d_:{
+        pronunciation: "like <b>d</b> as in <b>d</b>ark on the teeth",
+        type: "c",
+        ipa: "d̪"
+    },
+    silent:{
         pronunciation: "silent",
         type: "v",
         ipa: "-"
     },
-    _: {
+    _:{
         pronunciation: "<b>-</b> as in uh<b>-</b>oh",
         type: "v",
         ipa: "ʔ"
+    },
+    phar:{
+        pronunciation: "but with the tongue farther back in the mouth",
+        type: "-",
+        ipa: "ˤ"
+    },
+    asp:{
+        pronunciation: 'but with a strong burst of air',
+        type: "-",
+        ipa: "ʰ"
+    },
+    ah:{
+        pronunciation: '<b>a</b> as in s<b>a</b>t',
+        type: "v",
+        ipa: "æ"
     }
 };
