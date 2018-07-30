@@ -1,11 +1,5 @@
-body {
-    background-color: #6b5b95;
-}
 a{
     text-decoration: none;
-}
-h1{
-    color: yellow;
 }
 .letblock{
     font-size: 28px;
@@ -36,14 +30,17 @@ h1{
     color: black;
     font-size: 24px;
 }
+body {
+    background-color: #43c2c1;
+}
 .c{
-    background-color: #ff7b25;
+    background-color: #ff3300;
 }
 .v{
-    background-color: #feb236;
+    background-color: #fc4b54;
 }
 .o{
-    background-color: #d64161;
+    background-color: #fd882d;
 }
 span{
     position: relative;
@@ -67,7 +64,7 @@ span[title]:hover:after{
     font-size: 20px;
 }
 .vowels{
-    background-color: black;
+    background-color: #b30e50;
 }
 .ipalink:link {
     color: blue;
@@ -83,17 +80,35 @@ span[title]:hover:after{
 }
 .letters.c:hover{
     background-color: white;
-    color: #ff7b25;
+    color: #ff3300;
 }
 .letters.v:hover{
     background-color: white;
-    color: #feb236;
+    color: #fc4b54;
 }
 .letters.o:hover{
     background-color: white;
-    color: #d64161;
+    color: #fd882d;
 }
 .vowels:hover{
     background-color: white;
-    color: black;
+    color: #b30e50;
+}
+.scripthead{
+    font-size: 60px;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    display: block;
+}
+.scripthead:hover{
+    color:black;
+}
+@font-face {
+    font-family: Tifinagh;
+    src: url(tifinagh.ttf);
+}
+#tf{
+    font-size: 50px;
+    font-family: Tifinagh;
 }
