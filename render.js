@@ -14,27 +14,43 @@ $(document).ready(function () {
                 if(x.id == "ar"){
                     txt = txt.split(" ")[0];
                 }
-                $("#" + x.id).append("<div class='letblock letters " + x.direction + " " + ipa[x.letters[y][1].split(" ")[0]]["type"] + "' id='" + y + "'>" + txt + "</div>");
+                $("#" + x.id).append("<div class='letblock letters notextra " + x.direction + " " + ipa[x.letters[y][1].split(" ")[0]]["type"] + "' id='" + y + "'></div>");
+                $("#" + x.id + " #" + y).append("<span style='margin-top:0px'>" + txt + "</span>");
+                if(x.letters[y].length>2){
+                    $("#" + x.id + " #" + y).append("<br><span style='font-size:9px;margin-top:10px'>" + x.letters[y][2] + " / " + x.letters[y][3] + "</span>");
+                }
             }
         }
         function vowelrender(){
             for(var y = 0; y < x.vowels.length; y++){
-                $("#" + x.id).append("<div class='letblock vowels " + x.direction + " " + ipa[x.letters[y][1].split(" ")[0]]["type"] + "' id='" + y + "'>" + x.vowels[y][0] + "</div>");
+                $("#" + x.id).append("<div class='letblock vowels notextra " + x.direction + " " + ipa[x.letters[y][1].split(" ")[0]]["type"] + "' id='" + y + "'>" + x.vowels[y][0] + "</div>");
+            }
+        }
+        function extrarender(){
+            if(x.extraletters!==undefined){
+                for(var y = 0; y < x.extraletters.length; y++){
+                    $("#" + x.id).append("<div class='letblock extraletters letters " + x.direction + " " + ipa[x.letters[y][1].split(" ")[0]]["type"] + "' id='" + y + "'>" + x.extraletters[y][0] + "</div>");
+                }
             }
         }
         if(x.type=="alphabet"){
             letterrender();
+            extrarender();
         }
         if(x.type=="abjad"){
             letterrender();
             vowelrender();
+            extrarender();
         }
         if(x.type=="abugida"){
-            vowelrender();
             letterrender();
+            vowelrender();
+            extrarender();
         }
     }
     for(var g = 0; g < scripttypes.length; g++){
         $("#" + scripttypes[g]).prepend(scripttype[scripttypes[g]]);
     }
+    //fix later
+    $(".extraletters").hide();
 });
