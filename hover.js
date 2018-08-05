@@ -8,14 +8,17 @@ $(document).on("click mouseenter", ".letblock", function() {
     var text = language[div][type][num][0];
     var phonetic = language[div][type][num][1];
     var cases = language[div]["cases"];
-    if(div!=="ar"){
-        text = text.split("");
-    }
-    else{
+    if(text.includes(" ")){
         text = text.split(" ");
     }
+    else if(text.includes("﻿")){
+        text = text.split("﻿");
+    }
+    else{
+        text = text.split("");
+    }
     $("#" + div + " .info").empty();
-    $("#" + div + " .info").append("Letter: <span class='letter'></span>");
+    $("#" + div + " .info").append("<p>Letter: <span class='letter'></span></p>");
     if((div == "ar")&&(text.length==4)){
         text.shift();
     }
@@ -28,7 +31,7 @@ $(document).on("click mouseenter", ".letblock", function() {
         }
     }
     $("#" + div + " .info").append("<p>Pronunciation: " + pronounce(phonetic) + "</p>");
-    $("#" + div + " .info").append("<p><a target='_blank' class='ipalink' href='https://en.wikipedia.org/wiki/International_Phonetic_Alphabet'>IPA</a>: " + ipaize(phonetic) + "</p>");
+    $("#" + div + " .info").append("<p><a target='_blank' class='ipalink' href='https://en.wikipedia.org/wiki/International_Phonetic_Alphabet'>IPA</a>: /" + ipaize(phonetic) + "/</p>");
     function pronounce(x){
         if(!x.includes(" ")){
             return ipa[x]["pronunciation"];
