@@ -10,5 +10,10 @@ var scripttype = {
     <a class='scripthead' target='_blank' href='https://en.wikipedia.org/wiki/Abjad'>Abjads</a>
     <div class='scrblock'>
         <div class='letblock vowels' style='width:auto'>Diacritics, which are optional in these scripts, are colored purple</div>
-    </div>`
+    </div>`,
+    abugida: `
+    <a class='scripthead' target='_blank' href='https://en.wikipedia.org/wiki/Abugida'>Abugidas</a>
+    <div class='scrblock'>
+        <div class='letblock vowels' style='width:auto;height:auto'>Diacritics, which usually represent vowels in this script, are colored purple<br>Most abugidas contain an 'inherent vowel' if no diacritic is shown (usually 'a')</div>
+    </div>`,
 };
