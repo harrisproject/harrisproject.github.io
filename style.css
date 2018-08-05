@@ -3,12 +3,11 @@ a{
 }
 .letblock{
     font-size: 28px;
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     margin: 15px;
     text-align: center;
     color: white;
-    background-color: blue;
 }
 .vow{
     background-color: black;
@@ -111,4 +110,21 @@ span[title]:hover:after{
 #tf{
     font-size: 50px;
     font-family: Tifinagh;
+}
+@font-face {
+    font-family: Lontara;
+    src: url(lontara.ttf);
+}
+#lt{
+    font-size: 50px;
+    font-family: Lontara;
+}
+.info p:last-child{
+    margin: 0px;
+}
+.info p:first-child{
+    margin: 0px;
+}
+.extraletters{
+    opacity: 0.5;
 }
