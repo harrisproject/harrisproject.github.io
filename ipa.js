@@ -50,7 +50,7 @@ var ipa = {
         ipa: "i"
     },
     y: {
-        pronunciation: "<b>y</b> as in <b>y</b>es",
+        pronunciation: "<b>y</b> as in <b>y</b>arn",
         type: "v",
         ipa: "j"
     },
@@ -130,12 +130,12 @@ var ipa = {
         ipa: "ʃ"
     },
     sch: {
-        pronunciation: "like <b>sh</b> as in <b>sh</b>oe but with the tongue farther back in the mouth",
+        pronunciation: "like <b>sh</b> as in <b>sh</b>oe but with the tongue farther back in the mouth, like <b>scht</b> as in <b>scht</b>ick in Bulgarian",
         type: "c",
         ipa: "ɕ"
     },
     npl: {
-        pronunciation: "indicates that the previous letter should not be palatized",
+        pronunciation: "indicates that the previous letter should not be palatized, like <b>u</b> as in <b>u</b>nder in Bulgarian",
         type: "o",
         ipa: "-"
     },
@@ -145,7 +145,7 @@ var ipa = {
         ipa: "ɨ"
     },
     pl: {
-        pronunciation: "indicates that the previous letter should be palatized",
+        pronunciation: "indicates that the previous letter should be palatized, like <b>y</b> as in <b>y</b>arn in Bulgarian",
         type: "o",
         ipa: "-"
     },
@@ -210,7 +210,7 @@ var ipa = {
         ipa: "dʒ"
     },
     ev: {
-        pronunciation: "<b>ev</b> as in <b>ev</b>er",
+        pronunciation: "<b>ev</b> as in <b>ev</b>er (<b>yev</b> as in wh<b>yev</b>er at the start of words)",
         type: "o",
         ipa: "ɛv"
     },
@@ -323,5 +323,60 @@ var ipa = {
         pronunciation: '<b>a</b> as in s<b>a</b>t',
         type: "v",
         ipa: "æ"
+    },
+    ngk:{
+        pronunciation: '<b>nk</b> as in si<b>nk</b>',
+        type: "c",
+        ipa: "ŋk"
+    },
+    mp:{
+        pronunciation: '<b>mp</b> as in li<b>mp</b>',
+        type: "c",
+        ipa: "mp"
+    },
+    nr:{
+        pronunciation: '<b>nr</b> as in ge<b>nr</b>e',
+        type: "c",
+        ipa: "nr"
+    },
+    c:{
+        pronunciation: 'like the forward <b>k</b> as in <b>k</b>een',
+        type: "c",
+        ipa: "c"
+    },
+    gj:{
+        pronunciation: 'like the forward <b>g</b> as in <b>g</b>eese',
+        type: "c",
+        ipa: "ɟ"
+    },
+    gnc:{
+        pronunciation: '<b>nique</b> as in u<b>nique</b>',
+        type: "c",
+        ipa: "ɲc"
+    },
+    ye:{
+        pronunciation: '<b>ye</b> as in <b>ye</b>s',
+        type: "c",
+        ipa: "jɛ"
+    },
+    yi:{
+        pronunciation: '<b>yea</b> as in <b>yea</b>st',
+        type: "c",
+        ipa: "ji"
+    },
+    ly:{
+        pronunciation: 'soft <b>ll</b> as in mi<b>ll</b>ion',
+        type: "c",
+        ipa: "lʲ"
+    },
+    ur:{
+        pronunciation: '<b>ir</b> as in b<b>ir</b>d',
+        type: "v",
+        ipa: "ø",
+    },
+    yy:{
+        pronunciation: '<b>u</b> as in French deja v<b>u</b>',
+        type: "v",
+        ipa: "y"
     }
 };
