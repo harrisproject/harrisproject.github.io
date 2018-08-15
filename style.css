@@ -77,15 +77,15 @@ span[title]:hover:after{
 .titl:hover{
     color: black;
 }
-.letters.c:hover{
+.c:hover{
     background-color: white;
     color: #ff3300;
 }
-.letters.v:hover{
+.v:hover{
     background-color: white;
     color: #fc4b54;
 }
-.letters.o:hover{
+.o:hover{
     background-color: white;
     color: #fd882d;
 }
@@ -105,7 +105,7 @@ span[title]:hover:after{
 }
 @font-face {
     font-family: Tifinagh;
-    src: url(tifinagh.ttf);
+    src: url(fontfolder/tifinagh.ttf);
 }
 #tf{
     font-size: 50px;
@@ -113,11 +113,31 @@ span[title]:hover:after{
 }
 @font-face {
     font-family: Lontara;
-    src: url(lontara.ttf);
+    src: url(fontfolder/lontara.ttf);
 }
 #lt{
     font-size: 50px;
     font-family: Lontara;
+}
+@font-face{
+    font-family: Thaana;
+    src: url(fontfolder/thaana.ttf);
+}
+#th{
+    font-size: 50px;
+    font-family: Thaana;
+}
+@font-face{
+    font-family: Nko;
+    src: url(fontfolder/nko.ttf);
+}
+#nk{
+    font-size: 50px;
+    font-family: Nko;
+}
+.chsyll{
+    float: left;
+    width: 100%;
 }
 .info p:last-child{
     margin: 0px;
@@ -127,4 +147,21 @@ span[title]:hover:after{
 }
 .extraletters{
     opacity: 0.5;
+}
+.letblockarea{
+    height: 320px;
+    overflow: scroll;
+    width: 100%;
+}
+.letblockarea::-webkit-scrollbar {
+    width: 0px;
+}
+.loc{
+    margin-top: -20px;
+}
+.loc .titl{
+    font-size: 24px;
+}
+.numerals:hover{
+    color: black;
 }
