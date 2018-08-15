@@ -2,7 +2,7 @@ var ipa = {
     a: {
         pronunciation: "<b>a</b> as in <b>a</b>ll",
         type: "v",
-        ipa: "ɑː"
+        ipa: "ɑ"
     },
     b: {
         pronunciation: "<b>b</b> as in <b>b</b>oy",
@@ -51,7 +51,7 @@ var ipa = {
     },
     y: {
         pronunciation: "<b>y</b> as in <b>y</b>arn",
-        type: "v",
+        type: "c",
         ipa: "j"
     },
     k: {
@@ -102,7 +102,7 @@ var ipa = {
     u: {
         pronunciation: "<b>u</b> as in r<b>u</b>de",
         type: "v",
-        ipa: "uː"
+        ipa: "u"
     },
     f: {
         pronunciation: "<b>f</b> as in <b>f</b>ight",
@@ -190,9 +190,9 @@ var ipa = {
         ipa: "h"
     },
     uh: {
-        pronunciation: "<b>u</b> as in <b>u</b>nder",
+        pronunciation: "<b>a</b> as in <b>a</b>bove",
         type: "v",
-        ipa: "ʌ"
+        ipa: "ə"
     },
     dz: {
         pronunciation: "<b>ds</b> as in li<b>ds</b>",
@@ -202,7 +202,7 @@ var ipa = {
     aa: {
         pronunciation: "<b>ough</b> as in th<b>ough</b>t",
         type: "v",
-        ipa: "ɔː"
+        ipa: "ɔ"
     },
     j: {
         pronunciation: "<b>j</b> as in <b>j</b>am",
@@ -228,11 +228,6 @@ var ipa = {
         pronunciation: "like <b>s</b> as in <b>s</b>auce with the tongue farther back in the mouth",
         type: "c",
         ipa: "sˤ"
-    },
-    d_:{
-        pronunciation: "like <b>d</b> as in <b>d</b>oor with the tongue farther back in the mouth",
-        type: "c",
-        ipa: "dˤ"
     },
     t_:{
         pronunciation: "like <b>t</b> as in <b>t</b>all with the tongue farther back in the mouth",
@@ -302,7 +297,7 @@ var ipa = {
     silent:{
         pronunciation: "silent",
         type: "v",
-        ipa: "-"
+        ipa: ""
     },
     _:{
         pronunciation: "<b>-</b> as in uh<b>-</b>oh",
@@ -310,14 +305,19 @@ var ipa = {
         ipa: "ʔ"
     },
     phar:{
-        pronunciation: "but with the tongue farther back in the mouth",
+        pronunciation: "with the tongue farther back in the mouth",
         type: "-",
         ipa: "ˤ"
     },
     asp:{
-        pronunciation: 'but with a strong burst of air',
+        pronunciation: 'with a strong burst of air',
         type: "-",
         ipa: "ʰ"
+    },
+    long:{
+        pronunciation: 'longer',
+        type: '-',
+        ipa: "ː"
     },
     ah:{
         pronunciation: '<b>a</b> as in s<b>a</b>t',
@@ -378,5 +378,95 @@ var ipa = {
         pronunciation: '<b>u</b> as in French deja v<b>u</b>',
         type: "v",
         ipa: "y"
-    }
+    },
+    lh:{
+        pronunciation: 'like <b>l</b> as in cur<b>l</b> but farther back in the mouth',
+        type: "c",
+        ipa: "ɭ"
+    },
+    kw:{
+        pronunciation: 'like <b>qu</b> as in <b>qu</b>een',
+        type: "c",
+        ipa: "kw"
+    },
+    tl:{
+        pronunciation: 'like <b>tl</b> as in axolo<b>tl</b>',
+        type: "c",
+        ipa: "tl"
+    },
+    dl:{
+        pronunciation: 'like <b>dl</b> as in chor<b>tl</b>e',
+        type: "c",
+        ipa: "dl"
+    },
+    hn:{
+        pronunciation: 'like <b>hn</b> as in Jo<b>hn</b>',
+        type: "c",
+        ipa: "hn"
+    },
+    wa:{
+        pronunciation: 'like <b>wa</b> as in <b>wa</b>ter',
+        type: "v",
+        ipa: "wɑ"
+    },
+    yuh:{
+        pronunciation: 'like <b>you</b> as in <b>you</b>ng',
+        type: "v",
+        ipa: "jə"
+    },
+    lab:{
+        pronunciation: 'with rounded lips',
+        type: "o",
+        ipa: "ʷ"
+    },
+    ejc:{
+        pronunciation: 'with little air',
+        type: "o",
+        ipa: "ʼ",
+    },
+    ey:{
+        pronunciation: 'like <b>a</b> as in g<b>a</b>me',
+        type: "v",
+        ipa: "e"
+    },
+    gb:{
+        pronunciation: 'like <b>gb</b> as in rugby',
+        type: "c",
+        ipa: "gb"
+    },
+    nk_hs:{
+        pronunciation: 'marks a short vowel with a high tone',
+        type: "o",
+        ipa: ""
+    },
+    nk_ls:{
+        pronunciation: 'marks a short vowel with a low tone',
+        type: "o",
+        ipa: ""
+    },
+    nk_rs:{
+        pronunciation: 'marks a short vowel with a rising tone',
+        type: "o",
+        ipa: ""
+    },
+    nk_fl:{
+        pronunciation: 'marks a long vowel with a falling tone',
+        type: "o",
+        ipa: ""
+    },
+    nk_rl:{
+        pronunciation: 'marks a long vowel with a rising tone',
+        type: "o",
+        ipa: ""
+    },
+    nk_ll:{
+        pronunciation: 'marks a long vowel with a low tone',
+        type: "o",
+        ipa: ""
+    },
+    nk_hl:{
+        pronunciation: 'marks a long vowel with a high tone',
+        type: "o",
+        ipa: ""
+    },
 };
