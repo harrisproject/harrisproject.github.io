@@ -33,7 +33,9 @@ var language = {
         type: 'alphabet',
         web: 'https://en.wikipedia.org/wiki/Cyrillic_script',
         webalt: 'https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D1%80%D0%B8%D0%BB%D0%BB%D0%B8%D1%86%D0%B0',
-        cases: ["Uppercase","Lowercase"]
+        cases: ["Uppercase","Lowercase"],
+        locations: ["Eastern Europe","Southeastern Europe","Central Asia"],
+        languages: ["Russian", "Ukrainian", "Kazakh","Serbian","Bulgarian"]
     },
     gr: {
         letters: [
@@ -53,7 +55,9 @@ var language = {
         type: 'alphabet',
         web: 'https://en.wikipedia.org/wiki/Greek_alphabet',
         webalt: 'https://el.wikipedia.org/wiki/%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8C_%CE%B1%CE%BB%CF%86%CE%AC%CE%B2%CE%B7%CF%84%CE%BF',
-        cases: ["Uppercase","Lowercase","Final"]
+        cases: ["Uppercase","Lowercase","Final"],
+        locations: ["Greece","Cyprus"],
+        languages: ["Greek"]
       },
       he: {
         letters: [
@@ -81,7 +85,9 @@ var language = {
         type: 'abjad',
         web: 'https://en.wikipedia.org/wiki/Hebrew_alphabet',
         webalt: 'https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%A4%D7%91%D7%99%D7%AA_%D7%A2%D7%91%D7%A8%D7%99',
-        cases: ["","Final"]
+        cases: ["","Final"],
+        locations: ["Israel"],
+        languages: ["Hebrew","Yiddish"]
       },
       am: {
         letters: [
@@ -106,7 +112,9 @@ var language = {
         type: 'alphabet',
         web: 'https://en.wikipedia.org/wiki/Armenian_alphabet',
         webalt: 'https://hy.wikipedia.org/wiki/%D5%80%D5%A1%D5%B5%D5%A5%D6%80%D5%A5%D5%B6%D5%AB_%D5%A1%D5%B5%D5%A2%D5%B8%D6%82%D5%A2%D5%A5%D5%B6',
-        cases: ["Uppercase","Lowercase"]
+        cases: ["Uppercase","Lowercase"],
+        locations: ["Armenia"],
+        languages: ["Armenian"]
       },
       ge: {
         letters: [
@@ -129,7 +137,9 @@ var language = {
         type: 'alphabet',
         web: 'https://en.wikipedia.org/wiki/Georgian_scripts',
         webalt: 'https://ka.wikipedia.org/wiki/%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%A3%E1%83%9A%E1%83%98_%E1%83%93%E1%83%90%E1%83%9B%E1%83%AC%E1%83%94%E1%83%A0%E1%83%9A%E1%83%9D%E1%83%91%E1%83%90',
-        cases: [""]
+        cases: [""],
+        locations: ["Georgia (country)"],
+        languages: ["Georgian","Mingrelian"]
       },
       ar: {
         letters: [
@@ -148,6 +158,12 @@ var language = {
           [' َ','uh'],[' ِ','ih'],[' ُ','uu'],
           [' ٰ','a'],[' ٓ','a'],[' ْ','silent']
         ],
+        numerals: [
+          ['0','٠'],['1','١'],['2','٢'],
+          ['3','٣'],['4','٤'],['5','٥'],
+          ['6','٦'],['7','٧'],['8','٨'],
+          ['9','٩']
+        ],
         direction: 'rtl',
         name: 'Arabic Alphabet',
         namealt: 'أبجدية عربية',
@@ -155,7 +171,9 @@ var language = {
         type: 'abjad',
         web: 'https://en.wikipedia.org/wiki/Arabic_alphabet',
         webalt: 'https://ar.wikipedia.org/wiki/%D8%A3%D8%A8%D8%AC%D8%AF%D9%8A%D8%A9_%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9',
-        cases: ["Uppercase","Lowercase","Final"]
+        cases: ["Uppercase","Lowercase","Final"],
+        locations: ["Middle East","North Africa","Central Asia","Sahel","East Africa","Southeast Asia","South Asia"],
+        languages: ["Arabic","Persian","Urdu","Pashto","Uyghur"]
       },
       tf: {
         letters: [
@@ -172,13 +190,15 @@ var language = {
           ['ⵥ','z phar']
         ],
         direction: 'ltr',
-        name: 'Neo-Tifinagh Alphabet',
+        name: 'Tifinagh Alphabet',
         namealt: 'ⵜⵉⴼⵉⵏⴰⵖ',
         id: 'tf',
         type: 'alphabet',
         web: 'https://en.wikipedia.org/wiki/Tifinagh',
         webalt: 'https://en.wikipedia.org/wiki/Tifinagh',
-        cases: [""]
+        cases: [""],
+        locations: ["North Africa"],
+        languages: ["Berber"]
       },
       lt: {
         letters: [
@@ -202,8 +222,239 @@ var language = {
         type: 'abugida',
         web: 'https://en.wikipedia.org/wiki/Lontara_script',
         webalt: 'https://bug.wikipedia.org/wiki/%E1%A8%95%E1%A8%98%E1%A8%91%E1%A8%98%E1%A8%84%E1%A8%98_%E1%A8%94%E1%A8%98%E1%A8%92%E1%A8%84_%E1%A8%95%E1%A8%9B%E1%A8%84',
-        cases: [""]
-      }
+        cases: [""],
+        locations: ["Sulawesi"],
+        languages: ["Buginese","Makassarese","Mandar"]
+      },
+      th: {
+        letters: [
+          ['ހ‎','h'],['ށ‎','sh'],['ނ‎','n'],
+          ['ރ‎','r'],['ބ‎','b'],['ޅ‎','lh'],
+          ['ކ‎','k'],['އ','silent'],['ވ‎','v'],
+          ['މ‎','m'],['ފ‎','f'],['ދ‎','d'],
+          ['ތ‎','t'],['ލ‎','l'],['ގ‎','g'],
+          ['ޏ‎','gn'],['ސ‎','s'],['ޑ‎','dd'],
+          ['ޒ‎','z'],['ޓ‎','tt'],['ޔ‎','y'],
+          ['ޕ‎','p'],['ޖ‎','j'],['ޗ‎','ch']
+        ],
+        vowels: [
+          ['ަ','a'],['ާ','a long'],['ި','i'],
+          ['ީ','i long'],['ު','u'],['ޫ','u long'],
+          ['ެ','e'],['ޭ','e long'],['ޮ','o'],
+          ['ޯ','o long'],['ް','silent'],['ޱ','nn']
+        ],
+        direction: 'rtl',
+        name: 'Thaana',
+        namealt: 'ތާނަ‎',
+        id: 'th',
+        type: 'abugida',
+        web: 'https://en.wikipedia.org/wiki/Thaana',
+        webalt: 'https://dv.wikipedia.org/wiki/%DE%8C%DE%A7%DE%82%DE%A6_%DE%87%DE%A6%DE%8D%DE%A8%DE%8A%DE%AA%DE%84%DE%A7%DE%8E%DE%AC_%DE%8C%DE%A6%DE%83%DE%AA%DE%8C%DE%A9%DE%84%DE%AA',
+        cases: [""],
+        locations: ["Maldives"],
+        languages: ["Maldivian"]
+      },
+      ch: {
+        vowels: ['a','e','i','o','u','uh'],
+        syllables: [
+          ['g','Ꭶ,Ꭸ,Ꭹ,Ꭺ,Ꭻ,Ꭼ'],
+          ['h','Ꭽ,Ꭾ,Ꭿ,Ꮀ,Ꮁ,Ꮂ'],
+          ['l','Ꮃ,Ꮄ,Ꮅ,Ꮆ,Ꮇ,Ꮈ'],
+          ['m','Ꮉ,Ꮊ,Ꮋ,Ꮌ,Ꮍ, '],
+          ['n','Ꮎ,Ꮑ,Ꮒ,Ꮓ,Ꮔ,Ꮕ'],
+          ['kw','Ꮖ,Ꮗ,Ꮘ,Ꮙ,Ꮚ,Ꮛ'],
+          ['s','Ꮜ,Ꮞ,Ꮟ,Ꮠ,Ꮡ,Ꮢ'],
+          ['d','Ꮣ,Ꮥ,Ꮧ,Ꮩ,Ꮪ,Ꮫ'],
+          ['t','Ꮤ,Ꮦ,Ꮨ, , , '],
+          ['tl','Ꮭ,Ꮮ,Ꮯ,Ꮰ,Ꮱ,Ꮲ'],
+          ['ts','Ꮳ,Ꮴ,Ꮵ,Ꮶ,Ꮷ,Ꮸ'],
+          ['w','Ꮹ,Ꮺ,Ꮻ,Ꮼ,Ꮽ,Ꮾ'],
+          ['y','Ꮿ,Ᏸ,Ᏹ,Ᏺ,Ᏻ,Ᏼ'],
+        ],
+        othersyllables: [
+          ['Ꭷ','k+a'],['Ꮏ','hn+a'],['Ꮐ','n+a long'],
+          ['Ꮬ','dl+a']
+        ],
+        letters: [
+          ['Ꮝ','s'],['Ꭰ','a'],['Ꭱ','e'],
+          ['Ꭲ','i'],['Ꭳ','o'],['Ꭴ','u'],
+          ['Ꭵ','uh']
+        ],
+        direction: 'ltr',
+        name: 'Cherokee Syllabary',
+        namealt: 'ᏣᎳᎩ',
+        id: 'ch',
+        type: 'syllabary',
+        web: 'https://en.wikipedia.org/wiki/Cherokee_syllabary',
+        webalt: 'https://chr.wikipedia.org/wiki/%E1%8F%A3%E1%8E%B3%E1%8E%A9_%E1%8E%A7%E1%8F%AC%E1%8F%82%E1%8E%AF%E1%8F%8D%E1%8F%97',
+        cases: [""],
+        locations: ["Cherokee Nation"],
+        languages: ["Cherokee"]
+      },
+      hi: {
+        vowels: ['a','i','u','e','o','ya','yu','yo'],
+        syllables: [
+          ['k','か,き,く,け,こ'],
+          ['s','さ, ,す,せ,そ'],
+          ['t','た, , ,て,と'],
+          ['n','な,に,ぬ,ね,の'],
+          ['h','は,ひ, ,へ,ほ'],
+          ['m','ま,み,む,め,も'],
+          ['y','や, ,ゆ, ,よ'],
+          ['r','ら,り,る,れ,ろ'],
+          ['w','わ, , , ,を'],
+          ['g','が,ぎ,ぐ,げ,ご'],
+          ['z','ざ, ,ず,ぜ,ぞ'],
+          ['d','だ, , ,で,ど'],
+          ['b','ば,び,ぶ,べ,ぼ'],
+          ['p','ぱ,ぴ,ぷ,ぺ,ぽ']
+        ],
+        othersyllables: [
+          ['つ','ts+u'],['ふ','f+u'],['づ','z+u'],
+          ['づ','dz+u'],['ち','ch+i'],['し','sh+i'],
+          ['じ','j+i'],['ぢ','j+i']      
+        ],
+        letters: [
+          ['ん','n'],['あ','a'],['い','i'],
+          ['う','u'],['え','e'],['お','o'],
+          ['ゃ','a'],['ゅ','u'],['ょ','o']
+        ],
+        direction: 'ltr',
+        name: 'Hiragana',
+        namealt: 'ひらがな',
+        id: 'hi',
+        type: 'syllabary',
+        web: 'https://en.wikipedia.org/wiki/Hiragana',
+        webalt: 'https://ja.wikipedia.org/wiki/%E5%B9%B3%E4%BB%AE%E5%90%8D',
+        cases: [""],
+        locations: ["Japan"],
+        languages: ["Japanese"]
+      },
+      kt: {
+        vowels: ['a','i','u','e','o','ya','yu','yo'],
+        syllables: [
+          ['k','カ,キ,ク,ケ,コ'],
+          ['s','サ, ,ス,セ,ソ'],
+          ['t','タ, , ,テ,ト'],
+          ['n','ナ,ニ,ヌ,ネ,ノ'],
+          ['h','ハ,ヒ, ,ヘ,ホ'],
+          ['m','マ,ミ,ム,メ,モ'],
+          ['y','ヤ, ,ユ, ,ヨ'],
+          ['r','ラ,リ,ル,レ,ロ'],
+          ['w','ワ,ヰ, ,ヱ,ヲ'],
+          ['g','ガ,ギ,グ,ゲ,ゴ'],
+          ['z','ザ, ,ズ,ゼ,ゾ'],
+          ['d','ダ, , ,デ,ド'],
+          ['b','バ,ビ,ブ,ベ,ボ'],
+          ['p','パ,ピ,プ,ペ,ポ']
+        ],
+        othersyllables: [
+          ['ツ','ts+u'],['フ','f+u'],['ズ','z+u'],
+          ['ヅ','z+u'],['シ','sh+i'],['チ','ch+i'],
+          ['ぢ','j+i'],['ヂ','j+i']       
+        ],
+        letters: [
+          ['ン','n'],['ア','a'],['イ','i'],
+          ['ウ','u'],['エ','e'],['オ','o'],
+          ['ャ','a'],['ュ','u'],['ョ','o']
+        ],
+        direction: 'ltr',
+        name: 'Katakana',
+        namealt: 'カタカナ',
+        id: 'kt',
+        type: 'syllabary',
+        web: 'https://en.wikipedia.org/wiki/Katakana',
+        webalt: 'https://ja.wikipedia.org/wiki/%E7%89%87%E4%BB%AE%E5%90%8D',
+        cases: [""],
+        locations: ["Japan"],
+        languages: ["Japanese"]
+      },
+      gz: {
+        vowels: ['uh','u','i','a','e','yy','o','wa','yuh'],
+        syllables: [
+          ['h','ሀ,ሁ,ሂ,ሃ,ሄ,ህ,ሆ'],
+          ['l','ለ,ሉ,ሊ,ላ,ሌ,ል,ሎ,ሏ'],
+          ['h','ሐ,ሑ,ሒ,ሓ,ሔ,ሕ,ሖ,ሗ'],
+          ['m','መ,ሙ,ሚ,ማ,ሜ,ም,ሞ,ሟ,ፙ'],
+          ['s','ሠ,ሡ,ሢ,ሣ,ሤ,ሥ,ሦ,ሧ'],
+          ['r','ረ,ሩ,ሪ,ራ,ሬ,ር,ሮ,ሯ,ፘ'],
+          ['s','ሰ,ሱ,ሲ,ሳ,ሴ,ስ,ሶ,ሷ'],
+          ['k ejc','ቀ,ቁ,ቂ,ቃ,ቄ,ቅ,ቆ,ቋ'],
+          ['b','በ,ቡ,ቢ,ባ,ቤ,ብ,ቦ,ቧ'],
+          ['t','ተ,ቱ,ቲ,ታ,ቴ,ት,ቶ,ቷ'],
+          ['h','ኀ,ኁ,ኂ,ኃ,ኄ,ኅ,ኆ,ኋ'],
+          ['n','ነ,ኑ,ኒ,ና,ኔ,ን,ኖ,ኗ'],
+          ['_','አ,ኡ,ኢ,ኣ,ኤ,እ,ኦ,ኧ'],
+          ['k','ከ,ኩ,ኪ,ካ,ኬ,ክ,ኮ,ኳ'],
+          ['w','ወ,ዉ,ዊ,ዋ,ዌ,ው,ዎ'],
+          ['_','ዐ,ዑ,ዒ,ዓ,ዔ,ዕ,ዖ'],
+          ['z','ዘ,ዙ,ዚ,ዛ,ዜ,ዝ,ዞ,ዟ'],
+          ['y','የ,ዩ,ዪ,ያ,ዬ,ይ,ዮ'],
+          ['d','ደ,ዱ,ዲ,ዳ,ዴ,ድ,ዶ,ዷ'],
+          ['t ejc','ጠ,ጡ,ጢ,ጣ,ጤ,ጥ,ጦ,ጧ'],
+          ['p ejc','ጰ,ጱ,ጲ,ጳ,ጴ,ጵ,ጶ,ጷ'],
+          ['ts ejc','ጸ,ጹ,ጺ,ጻ,ጼ,ጽ,ጾ,ጿ'],
+          ['ts ejc','ፀ,ፁ,ፂ,ፃ,ፄ,ፅ,ፆ'],
+          ['f','ፈ,ፉ,ፊ,ፋ,ፌ,ፍ,ፎ,ፏ,ፚ'],
+          ['p','ፐ,ፑ,ፒ,ፓ,ፔ,ፕ,ፖ,ፗ'],
+          ['k ejc lab','ቈ, ,ቊ,ቋ,ቌ,ቍ'],
+          ['h lab','ኈ, ,ኊ,ኋ,ኌ,ኍ'],
+          ['k lab','ኰ, ,ኲ,ኳ,ኴ,ኵ'],
+          ['g lab','ጐ, ,ጒ,ጓ,ጔ,ጕ'],
+          ['sh','ሸ,ሹ,ሺ,ሻ,ሼ,ሽ,ሾ,ሿ'],
+          ['v','ቨ,ቩ,ቪ,ቫ,ቬ,ቭ,ቮ,ቯ'],
+          ['ch','ቸ,ቹ,ቺ,ቻ,ቼ,ች,ቾ,ቿ'],
+          ['gn','ኘ,ኙ,ኚ,ኛ,ኜ,ኝ,ኞ,ኟ'],
+          ['h','ኸ,ኹ,ኺ,ኻ,ኼ,ኽ,ኾ'],
+          ['zh','ዠ,ዡ,ዢ,ዣ,ዤ,ዥ,ዦ,ዧ'],
+          ['j','ጀ,ጁ,ጂ,ጃ,ጄ,ጅ,ጆ,ጇ'],
+          ['ch ejc','ጨ,ጩ,ጪ,ጫ,ጬ,ጭ,ጮ,ጯ'],
+        ],
+        othersyllables: [],
+        letters: [],
+        direction: 'ltr',
+        name: "Ge'ez Script",
+        namealt: 'ግዕዝ',
+        id: 'gz',
+        type: 'syllabary',
+        web: 'https://en.wikipedia.org/wiki/Ge%27ez_script',
+        webalt: 'https://am.wikipedia.org/wiki/%E1%8C%8D%E1%8B%95%E1%8B%9D',
+        cases: [""],
+        locations: ["Ethiopia","Eritrea"],
+        languages: ["Amharic","Tigrinya","Tigre","Bilen"]
+      },
+      nk: {
+        letters: [
+            ["ߊ‎",'ah'],["ߋ‎",'ey'],["ߌ‎",'i'],
+            ["ߍ‎",'e'],["ߎ‎",'u'],["ߏ‎",'o'],
+            ["ߐ‎",'aa'],["ߓ‎",'b'],["ߔ‎",'p'],
+            ["ߕ‎",'t'],["ߖ‎",'j'],["ߗ‎",'ch'],
+            ["ߘ‎",'d'],["ߙ‎",'r'],["ߚ‎",'r'],
+            ["ߛ‎",'s'],["ߜ‎",'gb'],["ߝ‎",'f'],
+            ["ߞ‎",'k'],["ߟ‎",'l'],["ߡ‎",'m'],
+            ["ߢ‎",'gn'],["ߣ‎",'n'],["ߤ‎",'h'],
+            ["ߥ‎",'w'],["ߦ‎",'y'],["ߒ‎",'n'],
+            ['߫‎','nk_hs'],[' ߬‎','nk_ls'],[' ߭‎','nk_rs'],
+            [' ߯‎','nk_hl'],[' ߰‎','nk_ll'],[' ߱','nk_rl'],
+            [' ߮','nk_fl']
+        ],
+        numerals: [
+          ['0','߀‎'],['1','߁'],['2','߂‎'],
+          ['3','߃‎'],['4','߄‎'],['5','߅‎'],
+          ['6','߆'],['7','߇‎'],['8','߈‎'],
+          ['9','߉‎']
+        ],
+        direction: 'rtl',
+        name: "N'Ko Alphabet",
+        namealt: 'ߒߞߏ‎',
+        id: 'nk',
+        type: 'alphabet',
+        web: 'https://en.wikipedia.org/wiki/N%27Ko_alphabet',
+        webalt: 'https://en.wikipedia.org/wiki/N%27Ko_alphabet',
+        cases: [""],
+        locations: ["West Africa"],
+        languages: ["Mandinka","Maninka"]
+    },
 };
 for(var u = 0; u < language["ar"]["letters"].length; u++){
   language["ar"]["letters"][u][0] = language["ar"]["letters"][u][0].replace(/\t/g, ' ');
