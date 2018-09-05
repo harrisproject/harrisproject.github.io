@@ -3,9 +3,9 @@ $(document).ready(function(){
         {
             type : "image",
             imagename : "moscow",
-            originalquote : "Умот не е во џебот, туку во главата",
-            translatedquote : "The brain is not in the pocket, but in the head",
-            location : "Skopje, Republic of Macedonia",
+            originalquote : "Поговорка - цветок, пословица - ягодка",
+            translatedquote : "A saying is a flower, a proverb is a berry",
+            location : "Moscow, Russian Federation",
         },
         {
             type : "list",
