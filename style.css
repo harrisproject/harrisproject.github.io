@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+}
+#title{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3b/Tel_Aviv_Coastline.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Comfortaa';
+    height: 100%;
+    text-align: center;
+}
+#title p{
+    font-size: 4em;
+}
+#title h1{
+    font-size: 6em;
+}
+p{
+    font-size: 2em;
+    color: white;
+}
+h1{
+    color: white;
+    font-size: 3em;
+}
+li{
+    font-size: 1.5em;
+}
+a{
+    color: gold;
+}
+#introduction{
+    background-color: #1e1e1e;
+    color: white;
+    text-align: left;
+    font-family: 'Merriweather';
+    padding: 10px;
+}
+#introduction h1{
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+#compare{
+    background-color: #1e1e1e;
+    color: white;
+    text-align: left;
+    font-family: 'Merriweather';
+    padding: 10px;
+}
+#harriscript{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/ce/Plaza_San_Mart%C3%ADn%2C_Buenos_Aires_%2827146002798%29.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Comfortaa';
+    height: 100%;
+    text-align: center;
+}
+#harriscript p{
+    font-size: 3em;
+}
+#harriscript h1{
+    font-size: 5em;
+}
+#features{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8a/Madrid_-_wow%21_%2833202610303%29.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Comfortaa';
+    height: 100%;
+    text-align: center;
+}
+#links{
+    background-color: #1e1e1e;
+    color: white;
+    text-align: left;
+    font-family: 'Merriweather';
+    padding: 10px;
+}
+.text{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+table{
+    color: white;
+    width: 70%;
+}
+td{
+    border: 1px solid white;
+    width: 35%;
+}
+table th{
+    font-size: 1.6em;
+}
+table p{
+    font-size: 1.2em;
+}
+.var{
+    color: crimson;
+}
+.color{
+    color: lightseagreen;
+}
+.selector{
+    color: orangered;
+}
+.prop{
+    color: peru;
+}
+.size{
+    color: forestgreen;
+}
+.special{
+    color: deeppink;
+}

@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"></link>
+        <link rel="shortcut icon" href="favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="compile.js"></script>
+        <script src="data.js"></script>
+        <meta charset="utf-8">
+        <title>Harriscript</title>
+    </head>
+    <body>
+        <div id="top"></div>
+        <div id="title">
+            <div class='text'>
+                <h1>Harriscript</h1>
+                <p>The future of web design</p>
+            </div>
+        </div>
+        <div id="introduction">
+            <h1>How does my browser render websites?</h1>
+            <p>Websites are a combination of HTML, CSS, and Javascript</p>
+            <ul>
+                <li><a target='_blank' href="https://en.wikipedia.org/wiki/HTML">HTML</a> provides the basic structure and architecture of a webpage</li>
+                <li><a target='_blank' href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a> gives colors, formatting, and layout to websites</li>
+                <li><a target='_blank' href="https://en.wikipedia.org/wiki/Javascript">Javascript</a> gives websites functionality and makes them interactive</li>
+            </ul>
+        </div>
+        <div id="harriscript">
+            <div class='text'>
+                <h1>What is Harriscript?</h1>
+                <p>Harriscript is a CSS Preprocessor written in Javascript</p>
+            </div>
+        </div>
+        <div id="compare">
+            <h1>CSS compared to Harriscript</h1>
+            <table>
+                <tr>
+                    <th>Harriscript</th>
+                    <th>CSS</th> 
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <p><span class='var'>$color</span> <span class='color'>blue</span></p>
+                            <p><span class='var'>$size</span> <span class='size'>12px</span></p>
+                            <p><span class='selector'>.text</span></p>
+                            <p>&emsp;<span class='prop'>color</span> <span class='color'>red</span></p>
+                            <p>&emsp;<span class='prop'>font-size</span> <span class='var'>$size</span></p>
+                            <p><span class='selector'>div</span></p>
+                            <p>&emsp;<span class='prop'>border</span> <span class='var'>$size</span> <span class='color'>black</span></p>
+                            <p>&emsp;<span class='prop'>background-color</span> <span class='var'>$color</span></p>
+                            <p>&emsp;<span class='selector'>p</span></p>
+                            <p>&emsp;&emsp;<span class='special'>%extend</span> <span class='selector'>.text</span></p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <p><span class='selector'>.text</span>{</p>
+                            <p>&emsp;<span class='prop'>color</span>: <span class='color'>red</span>;</p>
+                            <p>&emsp;<span class='prop'>font-size</span>: <span class='size'>12px</span></p>
+                            <p>}</p>
+                            <p><span class='selector'>div</span>{</p>
+                            <p>&emsp;<span class='prop'>border</span>: <span class='size'>12px</span> <span class='color'>black</span>;</p>
+                            <p>&emsp;<span class='prop'>background-color</span>: <span class='color'>blue</span>;</p>
+                            <p>}</p>
+                            <p><span class='selector'>div p</span>{</p>
+                            <p>&emsp;<span class='prop'>color</span>: <span class='color'>red</span>;</p>
+                            <p>&emsp;<span class='prop'>font-size</span>: <span class='size'>12px</span>;</p>
+                            <p>}</p>
+                        </div>
+                    </td> 
+                </tr>
+            </table>
+        </div>
+        <div id='features'>
+            <div class='text'>
+                <h1>Harriscript contains features such as variables, nesting and inheritance</h1>
+                <p>More features are coming soon!</p>
+            </div>
+        </div>
+        <div id='links'>
+            <h1>Important Links</h1>
+            <p>The following helped me build this website</p>
+            <ul>
+                <li><a target='_blank' href="https://fonts.google.com/">Google Fonts</a>: A website for importing fonts</li>
+                <li><a target='_blank' href="https://jquery.com/">JQuery</a>: A Javascript library which is used in Harriscript</li>
+                <li><a target='_blank' href="https://code.visualstudio.com/">Visual Studio Code</a>: My preferred text editor</li>
+            </ul>
+            <p>A list of other well-known CSS Preprocessors</p>
+            <ul>
+                <li><a target='_blank' href="https://sass-lang.com/">Sass/SCSS</a></li>
+                <li><a target='_blank' href="http://lesscss.org/">Less</a></li>
+                <li><a target='_blank' href="http://stylus-lang.com/">Stylus</a></li>
+            </ul>
+            <p>Also, feel free to check out my LinkedIn =)</p>
+            <ul>
+                <li><a target='_blank' href="https://www.linkedin.com/in/harris-m-373291133/">Harris Mowbray</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
